@@ -1,9 +1,13 @@
 let sharkY = 0;
 let sharkX = 0;
 let sharkSpeed = 1;
-let SharyArray = [];
+let SharkArray = [];
+let SharkCursor ;
 
 
+function preload() {
+  SharkCursor = loadImage('SharkFinCursor.png');
+}
 
 function setup() {
   createCanvas(1920, 1080);
@@ -13,7 +17,7 @@ function setup() {
 
 function draw() {
   background(220);
-  cursor()
+  cursor(SharkCursor);
   Shark();
    
 
